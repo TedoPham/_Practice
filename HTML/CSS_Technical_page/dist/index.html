@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <nav id="navbar">
+    <header>Basic CSS</header>
+    <li><a class="nav-link" href="#Introduction_to_Basic_CSS" >Introduction to Basic CSS</a></li>
+    <li><a class="nav-link" href="#Change_the_Color_of_Text" >Change the Color of Text</a></li>
+    <li><a class="nav-link" href="#Change_the_Font_Size_of_an_Element" >Change the Font Size of an Element</a></li>
+    <li><a class="nav-link" href="#Set_the_Font_Family_of_an_Element" >Set the Font Family of an Element</a></li>
+    <li><a class="nav-link" href="#Add_Borders_Around_Your_Elements">Add Borders Around Your Elements</a></li>
+    <li><a class="nav-link" href="#Add_Rounded_Corners_with_border_radius">Add Rounded Corners with border radius</a></li>
+    <li><a class="nav-link" href="#Give_a_Background_Color_to_a_div_Element" >Give a Background Color to a div Element</a></li>
+    <li><a class="nav-link" href="#Set_the_id_of_an_Element" >Set the id of an Element</a></li>
+    <li><a class="nav-link" href="#Use_an_id_Attribute_to_Style_an_Element" >Use an id Attribute to Style an Element</a></li>
+    <li><a class="nav-link" href="#Add_Different_Padding_to_Each_Side_of_an_Element" >Add Different Padding to Each Side of an Element</a></li>
+    <li><a class="nav-link" href="#Add_Different_Margins_to_Each_Side_of_an_Element" >Add Different Margins to Each Side of an Element</a></li>
+    <li><a class="nav-link" href="#Understand_Absolute_versus_Relative_Units" >Understand Absolute versus Relative Units</a></li>
+    <li><a class="nav-link" href="#Override_Styles_in_CSS" >Override Styles in CSS</a></li>
+    <li><a class="nav-link" href="#Use_Hex_Code_for_Specific_Colors" >Use Hex Code for Specific Colors</a></li>
+    <li><a class="nav-link" href="#Use_CSS_Variables_to_change_several_elements_at_once" >Use CSS Variables to change several elements at once</a></li>
+    <li><a class="nav-link" href="#Cascading_CSS_variables" >Cascading CSS variables</a></li>
+    <li><a class="nav-link" href="#Use_a_media_query_to_change_a_variable" >Use a media query to change a variable</a></li>
+    <li><a class="nav-link" href="#References" >References</a></li>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_Basic_CSS">
+      <header>Introduction to Basic CSS</header>
+      <article>
+        <p> Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.</p>
+        <p>Note that CSS is case-sensitive so be careful with your capitalization. CSS has been adopted by all major browsers and allows you to control:</p>
+        <li>color</li>
+        <li>fonts</li>
+        <li>positioning
+        <li>spacing</li>
+        <li>sizing</li>
+        <li>decorations</li>
+        <li>transitions</li>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Change_the_Color_of_Text">
+      <header>Change the Color of Text</header>
+      <article>
+        <p>The property that is responsible for the color of an element's text is the color style property.</p>
+        <p>Here's how you would set your h2 element's text color to blue:</p>
+        <code>
+        <xmp> 
+        <h2 style="color: blue;">CatPhotoApp</h2> 
+        </xmp>
+        </code> 
+      </article>
+      
+    </section>
+    <section class="main-section" id="Change_the_Font_Size_of_an_Element">
+      <header>Change the Font Size of an Element</header>
+      <article>
+        <p>Font size is controlled by the font-size CSS property, like this:</p>
+        <code><xmp> 
+        h1 {
+          font-size: 30px;
+        }
+        </xmp></code>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Set_the_Font_Family_of_an_Element">
+      <header>Set the Font Family of an Element</header>
+      <article>
+        <p>You can set which font an element should use, by using the font-family property.</p>
+        <p>For example, if you wanted to set your h2 element's font to sans-serif, you would use the following CSS</p>
+        <code><xmp>
+        h2 {
+          font-family: sans-serif;
+        }
+          </xmp></code>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Add_Borders_Around_Your_Elements">
+      <header>Add Borders Around Your Elements</header>
+      <article>
+        <p>CSS borders have properties like style, color and width</p>
+        <p>For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:</p>
+        <code>
+          <xmp>
+            <style>
+              .thin-red-border {
+                border-color: red;
+                border-width: 5px;
+                border-style: solid;
+              }
+            </style>
+          </xmp>
+        </code>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Add_Rounded_Corners_with_border_radius">
+      <header>Add Rounded Corners with border radius</header>
+      <article>
+        <p>Border that has sharp corners, can be round out with a CSS property called border-radius</p>
+      </article>     
+    </section>
+    
+    <section class="main-section" id="Give_a_Background_Color_to_a_div_Element">
+      <header>Give a Background Color to a div Element</header>
+      <article>
+        <p>You can set an element's background color with the background-color property.</p>
+        <p>For example, if you wanted an element's background color to be green, you'd put this within your style element:</p>
+        <code>
+          <xmp>
+.green-background {
+  background-color: green;
+}            
+          </xmp>
+        </code>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Set_the_id_of_an_Element">
+      <header>Set the id of an Element</header>
+      <article>
+      	<p>In addition to classes, each HTML element can also have an id attribute.</p>
+        <p>There are several benefits to using id attributes: You can use an id to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.</p>
+        <p>id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same id attribute.</p>
+        <p>Here's an example of how you give your h2 element the id of cat-photo-app:</p>
+      	<code>
+	          <xmp>
+<h2 id="cat-photo-app">	            
+	          </xmp>
+        </code>
+      </article>
+    </section>
+   
+    <section class="main-section" id="Use_an_id_Attribute_to_Style_an_Element">
+      <header>Use an id Attribute to Style an Element</header>
+      <article>
+      	<p>One cool thing about id attributes is that, like classes, you can style them using CSS.</p>
+        <p>However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.</p>
+        <p>Here's an example of how you can take your element with the id attribute of cat-photo-app and give it the background color of green. In your style element:</p>
+      	<code>
+	          <xmp>
+#cat-photo-app {
+  background-color: green;
+}	            
+	          </xmp>
+        </code>
+      </article>
+    </section>
+        
+    <section class="main-section" id="Add_Different_Padding_to_Each_Side_of_an_Element">
+      <header>Add Different Padding to Each Side of an Element</header>
+      <article>
+<p>CSS allows you to control the padding of all four individual sides of an element with the padding-top, padding-right, padding-bottom, and padding-left properties.</p>
+<p>Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually, you can specify them all in one line, like this:</p>        
+      </article>
+        <code>
+          <xmp>
+padding: 10px 20px 10px 20px;            
+          </xmp>
+        </code>      
+    </section>
+    
+    <section class="main-section" id="Add_Different_Margins_to_Each_Side_of_an_Element">
+      <header>Add Different Margins to Each Side of an Element</header>
+      <article>
+<p>CSS allows you to control the margin of all four individual sides of an element with the margin-top, margin-right, margin-bottom, and margin-left properties.</p>
+        <p>Instead of specifying an element's margin-top, margin-right, margin-bottom, and margin-left properties individually, you can specify them all in one line, like this:</p>
+      </article>
+        <code>
+          <xmp>
+margin: 10px 20px 10px 20px;           
+          </xmp>
+        </code>      
+    </section>
+        
+    <section class="main-section" id="Understand_Absolute_versus_Relative_Units">
+      <header>Understand Absolute versus Relative Units</header>
+      <article>
+      	<p>The last several challenges all set an element's margin or padding with pixels (px). Pixels are a type of length unit, which is what tells the browser how to size or space an item. In addition to px, CSS has a number of different length unit options that you can use.</p>
+        <p>The two main types of length units are absolute and relative. Absolute units tie to physical units of length. For example, in and mm refer to inches and millimeters, respectively. Absolute length units approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.</p>
+        <p>Relative units, such as em or rem, are relative to another length value. For example, em is based on the size of an element's font. If you use it to set the font-size property itself, it's relative to the parent's font-size.</p>
+      </article>
+    </section>
+        
+    <section class="main-section" id="Override_Styles_in_CSS">
+      <header>Override Styles in CSS</header>
+      <article>
+        <p>Applying multiple class attributes to a HTML element is done with a space between them like this:<p>
+        <code>class="class1 class2"</code>
+        <p>Note: It doesn't matter which order the classes are listed in the HTML element.</p>
+      	<p>The order of the class declarations in the &ltstyle&gt section are what is important. The second declaration will always take precedence over the first.</p>
+        <p>Note: </p>
+        <ul>
+          <li>id attribute will always take precedence over classes</li>
+          <li>inline style override id attributes <xmp><h1 style="color: green;"></xmp></li>        
+          <li>Override all other styles with !important<xmp>color: red !important;</xmp></li>
+        </ul>
+      </article>
+    </section>
+        
+    <section class="main-section" id="Use_Hex_Code_for_Specific_Colors">
+      <header>Use Hex Code for Specific Colors</header>
+      <article>
+      	<p>Did you know there are other ways to represent colors in CSS? One of these ways is called hexadecimal code, or hex code for short.</p>
+        <p>We usually use decimals, or base 10 numbers, which use the symbols 0 to 9 for each digit. Hexadecimals (or hex) are base 16 numbers. This means it uses sixteen distinct symbols. Like decimals, the symbols 0-9 represent the values zero to nine. Then A,B,C,D,E,F represent the values ten to fifteen. Altogether, 0 to F can represent a digit in hexadecimal, giving us 16 total possible values. </p>
+        <p>Hex codes use 6 hexadecimal digits to represent colors, two each for red (R), green (G), and blue (B) components.</p>
+        <p>From these three pure colors (red, green, and blue), we can vary the amounts of each to create over 16 million other colors!</p>
+        <p>For example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being #FFA500.</p>
+        <p>The digit 0 is the lowest number in hex code, and represents a complete absence of color.</p>
+        <p>The digit F is the highest number in hex code, and represents the maximum possible brightness.</p>
+        <p>For example the code below set color to black.</p>
+      	<code>
+	          <xmp>
+body {
+  color: #000000;
+}	            
+	          </xmp>
+        </code>
+      </article>
+    </section>
+        
+    <section class="main-section" id="Use_CSS_Variables_to_change_several_elements_at_once">
+      <header>Use CSS Variables to change several elements at once</header>
+      <article>
+      	<p>CSS Variables are a powerful way to change many CSS style properties at once by changing only one value.</p>
+      	<code>
+	          <xmp>
+<style>
+  .penguin { </xmp>
+    <xmp style="color:red;">    --penguin-skin: black;</xmp>
+ <xmp>  }
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+    background: var(--penguin-skin, gray);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }   
+  .penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--penguin-skin, gray);
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }  
+	          </xmp>
+        </code>
+      </article>
+    </section>
+        
+    <section class="main-section" id="Cascading_CSS_variables">
+      <header>Cascading CSS variables</header>
+      <article>
+      	<p>When you create a variable, it becomes available for you to use inside the element in which you create it. It also becomes available within any elements nested within it. This effect is known as cascading.</p>
+        <p>Because of cascading, CSS variables are often defined in the :root element.</p>
+        <p>You can think of the :root element as a container for your entire HTML document, in the same way that an html element is a container for the body element.</p>
+        <p>By creating your variables in :root, they will be available throughout the whole web page.</p>
+      	<code>
+	          <xmp>
+<style>
+  :root {
+    
+    /* add code below */
+    
+    /* add code above */
+  }
+</style>
+	          </xmp>
+        </code>
+        <p>You can then over-write these variables by setting them again within a specific element.</p>
+      </article>
+    </section>
+        
+    <section class="main-section" id="Use_a_media_query_to_change_a_variable">
+      <header>Use a media query to change a variable</header>
+      <article>
+        <p>CSS Variables can simplify the way you use media queries.</p>
+
+        <p>For instance, when your screen is smaller or larger than your media query break point, you can change the value of a variable, and it will apply its style wherever it is used.</p>
+        <p>The code below changes the background-color of the body to black when the window is less than or equal to 350px</p>
+      	<code>
+	          <xmp>
+@media (max-width: 350px) {
+    body {
+      background-color:black;  
+    }
+  }	            
+	          </xmp>
+        </code>
+      </article>
+    </section>
+        
+    <section class="main-section" id="References">
+      <header>References</header>
+      <article>
+        <li>All materials are adapted from <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp.org</a></li>
+      </article>
+    </section>   
+  </main>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

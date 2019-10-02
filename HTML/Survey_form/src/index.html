@@ -1,0 +1,126 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head>
+  <style>
+    body{
+      font-family:sans-serif;
+      background-color:gray;
+      margin:auto;
+      padding:10px;
+      min-width:500px;
+      max-width:800px;
+    }
+    h1{
+      text-align:center;
+      color:#F0F0F0;
+    }
+    .label{
+      margin-top:100px;
+      margin-bottom:100px;
+      padding-top:100px;
+    }
+    .container{
+      background-color:#FAFAFA;
+      padding:10px;
+      border-radius:10px;
+    }
+    .contact-info{
+      padding-right:100px;
+      display:grid;
+      grid-template-columns: 150px 1fr;
+      grid-gap: 10px;
+    }
+    .mental-state{
+     margin-top:20px;
+    }
+    .input-field{
+      height:20px;
+      width:280px;
+    }
+    #survey-form{
+      margin:20px
+    }
+    #comment-box{
+      margin-top:10px;
+      height:50px;
+    }
+    #submit{
+      border-radius:5px;
+      border:1px solid;
+      height:30px;
+      width:100px;
+      background-color:#796897;
+      color:white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="title">Wellness Survey Form</h1>
+  <div class="container">
+    <p id="description" align="center">Let me know how you are feeling today</p>
+    <form id="survey-form">
+      <div class="contact-info">
+        <label id="name-label">*Name:</label>
+        <input type="text" name="name" class="input-field" id="name" placeholder="Please enter your name" required>
+        <label id="number-label">*Phone number:</label>
+        <input type="number" name="phone-number" class="input-field" id="number" placeholder="Please enter your phone number" min="1000000000" max="9999999999" required>
+        <label id="email-label">*Email:</label>
+        <input type="email" name="email" class="input-field" id="email" placeholder="Please enter your email" required>
+      </div>
+      <div class="mental-state">
+        <label id="mental-state">How are you feeling right now?</label>
+        <select id="dropdown">
+          <option value="awesome">Feeling awesome</option>
+          <option value="ok">Feeling ok, but could be better</option>
+          <option value="salty">Feeling salty</option>
+          <option value="tilted">Feeling tilted</option>
+          <option value="no-answer">Rather not saying</option>
+        </select>
+      </div>
+      
+      <div id="contact-consent">
+        <p>Would you like us to contact you today?</p>
+        <ul> 
+          <label>Yes
+            <input name="radio-buttons" value="yes" type="radio"> </label>
+          <label>No
+            <input name="radio-buttons" value="no" type="radio"> </label>
+        </ul>
+      </div>
+      
+      <div id="materials">
+        <label for:"interested-materials">Would you like us to send you any of the reading material below? <br>
+        </label>
+        <ul id=material-list>
+          <ul> <label>
+          <input id=material-item value=1 type="checkbox">
+            Heal your mind by closing your eyes
+            </label></ul>
+          <ul> <label>
+          <input id=material-item value=1 type="checkbox">
+            Get good and stop being bad
+            </label></ul>
+          <ul> <label>
+          <input id=material-item value=1 type="checkbox">
+            Yoga to be cool
+          </label> </ul>
+          <ul> <label>
+          <input id=material-item value=1 type="checkbox">
+            Happy fed
+          </label> </ul>
+          <ul> <label>
+          <input id=material-item value=1 type="checkbox">
+            Sax on bed
+          </label> </ul>
+        </ul>
+      </div>
+      <div id="comments">
+        <label for:"comments">Would you like to add any comments or suggestions? <br></label>
+        <textarea name="comment-box" id="comment-box" class="input-field" placeholder="Please enter your comments here..."></textarea>
+      </div>
+      
+      <button id=submit type=submit>Submit</button>
+    </form>
+  </div>
+</body>

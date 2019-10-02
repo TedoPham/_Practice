@@ -1,0 +1,103 @@
+<head>
+  <style>   
+    body{
+      font-family:sans-serif;
+      position:relative;
+      display:block;
+    }
+    h1{
+      font-family:cursive,comic-sans ms,sans-serif;
+    }
+    p{
+      text-indent: 2.0em;
+      margin-top:5px;
+      margin-bottom:5px;
+    }
+    .container{
+      margin:120px auto;
+      max-width:800px;
+      width:100%;  
+    } 
+    header{
+      position:fixed;
+      top:0;
+      left:0;
+      display:flex;
+      border:1px solid;
+      height:120px;
+      width:100%;
+      background-color:#C45568;
+      justify-content:space-around;
+    }
+    #logo{
+      display:flex;
+    }
+    a{
+      color:black;
+    }
+    nav{
+      display:flex;
+      margin-top:70px;
+    }
+    .nav-link{
+      margin-left:1em;
+      margin-right:1em;  
+    } 
+    a:hover{
+      color:white;
+    }
+    #header-img{
+      margin:10px;
+      height:100px;
+    }
+    #about-anchor,#pricing-anchor,#contact-anchor{
+      position:relative;
+      top:-120px;
+    }
+    #video{
+      align-self:center;
+      margin: 1em 0 0 0
+    }
+
+    #pricing{
+      margin:2em 0 2em 0;
+    }
+    #price-info{
+      display:flex;
+      justify-content:space-around;
+    }
+    #price-box{
+      display:flex;
+      padding:10px;
+      text-align:center;
+      height:150px;
+      width:200px;
+      background-color:#C45568;
+    }
+    #price-box:hover{
+      border:5px solid pink;
+    }
+    #register{
+      margin-top:2em;
+      margin-botom:1em;
+    }
+    #register-form{
+      margin-left:2em;
+    }
+    #submit{
+      border-radius:5px;
+      border:1px solid;
+      height:30px;
+      width:100px;
+    }
+    #email{
+      height:20px;
+      width:280px;
+    }
+    @media(max-width:800px){
+      #video{
+        width:60%;
+        height:60%;
+      }
+  </style>
+</head>
