@@ -1,0 +1,5 @@
+The data file consist of images of handwritten digits (0..9). The images were scanned and scaled into 28x28 pixels. The array 28x28 for each pixel is flattened to 1x784 array in the data file. Each pixel is represented as an integer in range of (0..255), where 0 means the pixel is completely white and 255 means the pixel being completely black. 
+
+This implemented the K-Means algorithm to separate the digits differences and group similar digits together. Ex: all 0s in one group.
+
+The figure label number does not represent the digit number but the group number.

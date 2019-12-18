@@ -1,0 +1,1 @@
+Use neareast neighbor method to classify whether movie review is negative review(-1) or positive review(1)
